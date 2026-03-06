@@ -171,7 +171,6 @@
     </div>
 
     <script>
-        // Configuración de acceso
         const CONFIG = {
             public: { u: "usuario", p: "usuario11" },
             owner: { u: "Klee", p: "Chizu8890" }
@@ -180,6 +179,7 @@
         function login() {
             const u = document.getElementById('g-user').value;
             const p = document.getElementById('g-pass').value;
+            
             if(u === CONFIG.public.u && p === CONFIG.public.p) {
                 document.getElementById('login-container').style.display = 'none';
                 document.getElementById('main-content').style.display = 'block';
@@ -191,6 +191,7 @@
         function loginPrivate() {
             const u = document.getElementById('p-user').value;
             const p = document.getElementById('p-pass').value;
+            
             if(u === CONFIG.owner.u && p === CONFIG.owner.p) {
                 document.getElementById('p-auth').style.display = 'none';
                 document.getElementById('p-content').style.display = 'block';
